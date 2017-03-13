@@ -18,8 +18,8 @@ RUN apk add --no-cache \
 COPY xvfb-run /usr/bin/xvfb-run
 
 ENV PHANTOMJS_VERSION 2.1.1
-ENV CASPERJS_VERSION 1.1.3
-ENV SLIMERJS_VERSION 0.10.1
+ENV CASPERJS_VERSION 1.1.4
+ENV SLIMERJS_VERSION 0.10.3
 
 # Installing dependencies from archives - not only this allows us to control versions, 
 # but the resulting image size is 130MB+ less (!) compared to an npm install (440MB vs 575MB).
@@ -35,8 +35,8 @@ RUN \
 
 RUN \
 	# CasperJS
-	echo "Downloading CaperJS v${CASPERJS_VERSION}..." && \
-	curl -sL "https://github.com/casperjs/casperjs/archive/1.1.3.tar.gz" | tar zx && \
+	echo "Downloading CasperJS v${CASPERJS_VERSION}..." && \
+	curl -sL "https://github.com/casperjs/casperjs/archive/${CASPERJS_VERSION}.tar.gz" | tar zx && \
 	mv casperjs-$CASPERJS_VERSION /opt/casperjs && \
 	ln -s /opt/casperjs/bin/casperjs /usr/bin/casperjs
 
