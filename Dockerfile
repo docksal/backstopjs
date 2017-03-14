@@ -1,6 +1,4 @@
-FROM mhart/alpine-node:4.5
-
-MAINTAINER Leonid Makarov <leonid.makarov@ffwagency.com>
+FROM mhart/alpine-node:6.10.0
 
 RUN apk add --no-cache \
 	bash \
