@@ -1,0 +1,12 @@
+language: generic
+
+services:
+  - docker
+
+install:
+  - curl -fsSL get.docksal.io | sh
+  - fin version
+  - fin sysinfo
+
+script:
+  - make && make test
