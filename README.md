@@ -4,6 +4,16 @@ A self-contained Docker image to run [BackstopJS](https://github.com/garris/Back
 
 [Visual Regression Testing with BackstopJS in a Docker container](https://blog.docksal.io/visual-regression-testing-with-backstopjs-in-a-docker-container-dfd1b9ae8582)
 
+---
+
+## Deprecation notice
+
+In September 2017 this image has been [merged](https://github.com/garris/BackstopJS/pull/552) into BackstopJS project.  
+Use `backstopjs/backstopjs` instead of `docksal/backstopjs` going forward.  
+Post issues and feature requests to https://github.com/garris/BackstopJS
+
+---
+
 Features:
 
 - [BackstopJS 3.x](https://github.com/garris/BackstopJS)
