@@ -1,4 +1,4 @@
-# BackstopJS Docker Image
+# BackstopJS Docker Image [DEPRECATED]
 
 A self-contained Docker image to run [BackstopJS](https://github.com/garris/BackstopJS) with no external dependencies.
 
